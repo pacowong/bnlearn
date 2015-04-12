@@ -86,8 +86,9 @@ is.string = function(x) {
 }#IS.STRING
 
 is.ndmatrix = function(x) {
-
-  is(x, c("table", "matrix", "array"))
+  is(x, "table") ||
+  is(x, "matrix") ||
+  is(x, "array")
 
 }#IS.NDMATRIX
 
